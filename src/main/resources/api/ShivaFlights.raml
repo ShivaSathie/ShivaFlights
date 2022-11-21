@@ -1,0 +1,56 @@
+#%RAML 1.0
+title: ShivaFlights
+version: v1
+
+/ShivaFlights:
+ get:
+   queryParameters:
+     source:
+      example: HYD
+     destination:
+      example: BAN
+     doj:
+      example: 31-JUL-2022
+   responses:
+     200:
+      body:
+        application/json:
+          example:
+            [
+            
+    {
+        "ID": 101,
+        "airline": "SHIVA",
+        "flightCode": "IND101",
+        "fromAirportCode": "HYD",
+        "toAirportCode": "BAN",
+        "departureDate": "31-JUL-2022",
+        "emptySeats": 0,
+        "totalSeats": 200,
+        "price": 199,
+        "planeType": "Indigo 737"
+    },
+    {
+        "ID": 102,
+        "airline": "SHIVA",
+        "flightCode": "IND102",
+        "fromAirportCode": "HYD",
+        "toAirportCode": "BAN",
+        "departureDate": "31-JUL-2022",
+        "emptySeats": 24,
+        "totalSeats": 350,
+        "price": 450,
+        "planeType": "Indigo 747"
+    },
+    {
+        "ID": 103,
+        "airline": "SHIVA",
+        "flightCode": "IND103",
+        "fromAirportCode": "HYD",
+        "toAirportCode": "BAN",
+        "departureDate": "31-JUL-2022",
+        "emptySeats": 33,
+        "totalSeats": 400,
+        "price": 450,
+        "planeType": "Indigo 757"
+    }]
